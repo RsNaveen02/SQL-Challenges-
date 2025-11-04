@@ -22,5 +22,9 @@
 		--from services_weekly
 		--where patients_request >100;
 
-		
+--Main problem
+-- find all patients admitted to 'Surgery' service with a satisfaction score below 70, showing their patient_id, name, age, and satisfaction score.
+	SELECT patient_id, name, age, satisfaction as satisfaction_score
+	from patients
+	where satisfaction < 70;
 	
