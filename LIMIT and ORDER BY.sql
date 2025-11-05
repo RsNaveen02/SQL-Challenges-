@@ -1,0 +1,13 @@
+--                                Day3 --
+--q1)List all patients sorted by age in descending order.
+	--Select *from patients Order by age Desc;
+--q2)Show all services_weekly data sorted by week number ascending and patients_request descending.
+	--Select *from services_weekly 
+	--ORDER BY week ASC,patients_refused  DESC;
+--q3) Display staff members sorted alphabetically by their names.
+	--Select Upper(staff_name) as name from staff Order By staff_name ASC;
+
+--Main question Retrieve the top 5 weeks with the highest patient refusals across all services, showing week, service, patients_refused, and patients_request. Sort by patients_refused in descending order.
+		--Select week, service, patients_refused,patients_request,  patients_refused from services_weekly 
+		--ORDER BY Patients_refused desc
+		--LIMIT 5;
